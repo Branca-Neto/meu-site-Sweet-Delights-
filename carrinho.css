@@ -1,0 +1,208 @@
+
+
+.product {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+}
+
+#cart {
+    background: #f2f1ec;
+    border: 1px solid #000;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 400px;
+    padding: 16px;
+    z-index: 1000;
+    max-height: 600px;
+    overflow-y: auto;
+
+}
+.cart-item {
+    margin-bottom: 10px;
+    font-size: 1.8em; /* Aumenta o tamanho do texto dos itens no carrinho */
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.buy-button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+#cart-items {
+    margin-bottom: 16px;
+}
+#cart h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 2rem 0; /* Ajusta o espaçamento interno da seção */
+}
+#cart p{
+    font-size: 18px;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.cart-item .remove {
+    cursor: pointer;
+    color: #783b31;
+}
+
+.hidden {
+    display: none;
+}
+
+#cart-count {
+    background-color: #783b31;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+.cart-item {
+    margin-bottom: 10px;
+}
+.stars i {
+    font-size: 1.5em; /* Aumenta o tamanho das estrelas */
+}
+.remove {
+    font-size: 1.5em; /* Aumenta o tamanho do ícone de remoção */
+    cursor: pointer;  /* Muda o cursor para pointer ao passar por cima do ícone */
+    margin-left: 10px;
+}
+#cart-menu {
+    font-size: 2.5em; /* Ajusta o tamanho do ícone do carrinho */
+}
+#login-btn {
+    font-size: 2.5em; /* Ajusta o tamanho do ícone de login */
+}
+#menu-btn {
+    font-size: 2em; /* Ajusta o tamanho do ícone de menu */
+}
+
+/*Login */
+
+
+.form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f1ec;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 600px; /* Aumentando a largura */
+        height: 500px; /* Aumentando a altura */
+}
+.form-container.active {
+    display: block;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 2em); /* Para ajustar o tamanho do input */
+}
+.form-container h2{
+    font-size: 40px;
+    color: #c98d83;
+    text-align: center;
+}
+
+.form-container form .registro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Espaçamento considerável entre os campos */
+}
+.form-container form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* Espaçamento considerável entre os campos */
+}
+.form-container form div i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.form-container .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form-container form button {
+    padding: 10px;
+    width: 50%; /* Reduzindo a largura do botão de login */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center; /* Centralizando o botão */
+    margin-bottom: 20px;
+}
+.social-text{
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    background-color: #c98d83;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.social-icon:hover{
+    background-color: #783b31;
+    color: #c98d83;
+}
+
+.register-text {
+    font-size: 1.6em; /* Aumentando o tamanho do texto "Não tem conta? Registre-se" */
+    text-align: center;
+    margin-top: 20px;
+}
+.register-text a {
+    color: #783b31;
+    text-decoration: none;
+}
+.register-text a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtoss</title>
+ 
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="carrinho.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+       <!-- header -->
+
+       <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-bread-slice"></i> Sweet Delights</a>
+
+        <nav class="navbar">
+         
+                <a href="index.html">Inicio</a>
+                <a href="#aniversario" class="ativo">Bolos de Aniversário</a>
+                <a href="#chocolate">Bolos de chocolate</a>
+                <a href="#casamento">Bolos de Casamento</a>
+                <a href="#caseiro">Bolos Caseiros</a>
+        </nav>
+        <div id="cart-menu">
+            <div id="cart-icon" class="fas fa-shopping-cart"></div>
+            <span id="cart-count">0</span>
+            <script src="carrinho.js"></script>
+        </div>
+
+     
+         <!-- shopping cart -->
+        <div id="cart" class="hidden">
+            <h2>Carrinho de Compras </h2>
+            <div id="cart-items"></div>
+            <p id="total">Total: $0.00</p>
+            <button class="btn add-to-cart" id="buy-button">Comprar</button>
+            <script src="carrinho.js"></script>
+        </div>
+    </header>
+
+  
+ 
+<!-- shopping cart end-->
+ 
+
+<!--Registrar-->
+<section class="registro">
+<div class="form-container" id="signup-form">
+    <span class="close-btn" onclick="toggleForm('signup-form')">&times;</span>
+    <h2>Registro</h2>
+    <form id="signup">
+        <div class="registro">
+            <i class="fas fa-user"></i>
+            <input type="text" id="signup-username" placeholder="Username" required>
+        </div>
+        <div class="registro">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="signup-email" placeholder="Email" required>
+        </div>
+        <div class="registro">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="signup-password" placeholder="Password" required>
+        </div>
+
+        <p class="social-text">Ou faça login com a plataforma social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+        <button type="submit" class="btn add-to-cart">Registrar</button>
+    </form>
+    <script src="registro.js"></script>
+</div>
+</section>
+<!--bolos de Aniversario -->
+    <section class="aniversario" id="aniversario">
+
+        <div class="header1">
+            <h1>Perfeito para tornar seu dia especial ainda mais memorável</h1>
+        </div>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="an38.jpg" alt="Bolo de aniversario" class="product-image">
+                </div>
+                <div class="content">
+                    <h3>Festa sem bolo é igual a avião sem asa, não serve para nada!</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">25.000Kz</span>
+                    <button class="btn add-to-cart" id="add-to-cart">Add Carrinho</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="an30.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>A Combinação Perfeita para o seu dia especial/Memorável!</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">25.000Kz</span>
+                    <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+                    <script src="teste.js"></script>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="an23.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Mais que um bolo, um pedacinho do paraíso/Só para ti!</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">20.000Kz</span>
+                    <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="an25.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nosso maior prazer é alegrar o seu dia com nossos bolos!</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">20.000Kz</span>
+                    <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="ch9.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Quem come um pedaço desse bolo não quer guerra com ninguém!</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">100.000Kz</span>
+                    <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="an20.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Um abraço e um pedaço de bolo não se nega a ninguém!</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">80.000Kz</span>
+                    <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="an29.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Amar é bom, mas você já comeu um pedaço desse bolo?”</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">100.000Kz</span>
+                    <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="an37.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Bolo é a Resposta!, Torne o seu especial ainda mais especial.</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">90.000Kz</span>
+                    <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+                </div>
+            </div>
+
+        </div>
+   
+    </section>
+<!--- Bolos de Aniversario Fim -->
+
+<!-- Bolos de Chocolate -->
+<section class="aniversario" id="chocolate">
+
+    <div class="header2">
+        <h1> O Sabor que faz você Sorrir, Sinta a Magia com uma Mordida</h1>
+    </div>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="ch1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Não tem mal que um bolo não ajude a curar/Sorria!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">25.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="ch18.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Fofura Comestível, Uma experiência única para seus sentidos!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">25.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="ch21.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Mais que um bolo, um pedacinho do paraíso/Todinho para ti!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">20.000Kz</span>
+                <button class="btn add-to-cart" id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="ch22.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>A bondade dos morangos, Saboreie cada segundo!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">30.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="ch6.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Todo dia é um bom dia para comer um bolo gostoso.!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">20.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="ch15.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Bolo é bom o tempo todo, ainda mais com Brigadeiros!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">30.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="ch24.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Quem come um pedaço desse bolo não quer guerra com ninguém!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="ch25.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Mais que um pedaço de bolo, é uma porção de felicidade.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- bolos de chocolate Fim -->
+
+<!-- Bolos de Casamento-->
+<section class="aniversario" id="casamento">
+
+    <div class="header3">
+        <h1>A Combinação Perfeita para o seu Casamento</h1>
+    </div>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="cas1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>O bolo de casamento perfeito para o seu dia perfeito!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">200.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="cas2.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>As flores deixam tudo bem mais bonito e elegante!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">150.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="cas5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Nosso maior prazer é realizar os desejos de nossos Clientes!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">100.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="cas8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Aqui nós realizamos sonhos e os bolos ficam na lembrança!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">50.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="casamento3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pensamos nos mínimos detalhes para deixar o seu dia especial lindo!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">200.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="casamento8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Aqui damos vida aos desejos e sonhos de nossos clientes!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">170.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="casamento6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>As flores deixam tudo bem mais bonito e elegante!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">150.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="cas4.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>O bolo de casamento perfeito para o seu dia perfeito!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">170.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Bolos de Casamento Fim -->
+
+<!--Bolos Caseiros -->
+<section class="aniversario" id="caseiro">
+
+    <div class="header4">
+        <h1>O A Escolha Perfeita Para o seu Café da Manhã</h1>
+    </div>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="case12.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Sempre fresquinho e delicioso para você, Cobertura de ninho!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="case14.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Aquela Cobertura irresistível de leite e limão!  </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="case17.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Sempre fresquinho e delicioso para você, Cobertura de ninho!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="case9.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Aquele cobertura inesplicável de cocó e limão!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="case20.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>O bolo perfeito para o seu café da manhã com gostinho de morango! Perfeito</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="caseiro1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Mais Que Um Bolo, Um Pedacinho Do Paraíso!/A Combinação Perfeita Para O Seu Dia Especial!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="caseiro2.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3> Bolo caseiro fresquinho saindo do forno agora para sua casa, para alegrar a sua manhã!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="caseiro5.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Sabor de laranja vibrante que fala, Aqui os nossos bolos têm vida!</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="price">10.000Kz</span>
+                <button class="btn add-to-cart"  id="add-to-cart">Add Carrinho</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="carrinho.js"></script>
+</section>
+
+<!-- Bolos Caseiros Fim -->
+
+
+ <!-- footer -->
+
+ <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Endereço</h3>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Luanda, Bairro Popular.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>E-mail</h3>
+            <a href="#" class="link">brancaneto97@gmail.com</a>
+            <a href="#" class="link">brancaneto97@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <h3>Telefones</h3>
+            <p>+244 945083501</p>
+            <p>+244 936198425</p>
+        </div>
+
+        <div class="box">
+            <h3> Horário</h3>
+            <p>Segunda - Sexta: 9:00 - 23:00 <br> Sabádo: 8:00 - 24:00 </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> &#169 2024 <span>Sweet Delights</span> Todos os Direitos Reservados! </div>
+
+    <script src="carrinho.js"></script>
+</section>
+
+
+
+<script src="carrinho.js"></script>
+<!-- footer ends -->
+
+<!-- Produtos Fim -->
+
+</body>
+
+</html>  

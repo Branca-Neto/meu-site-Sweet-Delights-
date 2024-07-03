@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:black;
+}
+nav{
+    background: black;
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo-menu {
+    float: left;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    color: #f2f2f2;
+    font-size: 27px;
+}
+nav .logo-menu span{
+    color:  #ffcc32;
+    font-size: 27px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: black;
+    margin:  0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a.ativo{
+    color: #ffcc32;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffcc32,
+                0 0 5px #ffcc32;
+
+}
+
+nav ul li a:hover{
+    color: #ffcc32;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffcc32,
+                0 0 5px #ffcc32;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 2px solid #ffcc32;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    text-align: center;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li a:hover{
+    color: #ffcc32;
+    box-shadow: none;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgb(0, 0, 0,0.3);
+}
+nav ul ul li a{
+    line-height: 40px;
+}

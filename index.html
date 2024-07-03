@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights</title>
+ 
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="como.css">
+    <link rel="stylesheet" href="ComoTrabalhamos.css">
+    <link rel="stylesheet" href="carrinho.css">
+    <script src="script.js" defer></script>
+    <script src="login.js" defer></script>
+    <script src="registro.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-bread-slice"></i> Sweet Delights</a>
+
+        <nav class="navbar">
+            <a href="#home" class="ativo">Inicio</a>
+            <a href="#about">Quem Somos</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#team">Equipa</a>
+            <a href="#review">Comentários</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="#order">Encomenda</a>
+            <a href="#faq" >FAQ</a></li>
+        </nav>
+
+        <div class="icons">
+            <div id="login-btn" class="fa-solid fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <script src="login.js"></script>
+        </div>
+
+    
+        <!--<i class="fa-solid fa-right-to-bracket"></i> -->
+
+    </header>
+
+    <!-- header end -->
+
+ <!--Login-->
+ <div class="form-container" id="login-form">
+    <span class="close-btn" onclick="toggleForm('login-form')">&times;</span>
+    <h2>Login</h2>
+    <form id="login">
+       
+        <div>
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div>
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn add-to-cart">Login</button>
+
+        <p class="social-text"> Ou faça login com a plataforma social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+        <p class="register-text">Não tem conta? <a  id="signup-link" onclick="toggleForm('signup-form')">Registre-se</a></p>   
+    </form>
+    <script src="login.js"></script>
+    
+</div>
+<!--Login fim-->
+
+<!--Registrar-->
+<section class="registro">
+<div class="form-container" id="signup-form">
+    <span class="close-btn" onclick="toggleForm('signup-form')">&times;</span>
+    <h2>Registro</h2>
+    <form id="signup">
+        <div class="registro">
+            <i class="fas fa-user"></i>
+            <input type="text" id="signup-username" placeholder="Username" required>
+        </div>
+        <div class="registro">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="signup-email" placeholder="Email" required>
+        </div>
+        <div class="registro">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="signup-password" placeholder="Password" required>
+        </div>
+
+        <p class="social-text">Ou faça registro com a plataforma social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+        <button type="submit" class="btn add-to-cart">Registrar</button>
+    </form>
+    <script src="login.js"></script>
+</div>
+
+</section>
+
+   
+
+
+   <!-- home -->
+<section class="home" id="home">
+    <div class="slideShow-container">
+        <div class="mySlides fade">
+            <img src="principal.jpg" >
+            <div class="text">Delicia-se em Cada Mordida</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="doce12.jpg">
+            <div class="text">Somos uma Combinação Perfeita</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="principal2.jpg">
+            <div class="text">A vida com mais Sabor</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="ch20.jpeg">
+            <div class="text">É tão doce que Fala </div>
+     
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <script src="script.js"></script>
+    </div>
+</section>
+<!-- home section ends -->
+
+
+  <!-- Sobre Nós -->
+
+  <section class="about" id="about">
+    <h1 class="heading"> <span>Sobre</span> Nós </h1>
+    <div class="row">
+        <div class="image">
+            <img src="an22.jpg" onmouseover="this.src='bolo29.jpeg'" onmouseout="this.src='an22.jpg'">
+        </div>
+        <div class="content">
+            <h3>Coisas boas vêm para aqueles que <span>assam</span> para os outros</h3>
+            <p>Somos uma equipa criativa e apaixonada pelo que faz, procurando criar cada Produto de forma inesquecível, pela imagem, qualidade e sabor distintos.
+                Com produção própria, desenvolvemos todos os nossos produtos internamente, recorrendo ao imaginário do Consumidor, relembrando sabores caseiros e sofisticados. 
+                Distinguindo-se desta forma pela exclusividade dos nossos produtos. Prestamos um serviço flexível e personalizado junto do Cliente, de forma a garantir fidelidade e máxima satisfação.
+                Aliamos a vontade de aprender, aperfeiçoar e melhorar os nossos produtos.
+            </p>
+            <div id="more-content" style="display: none;">
+                <p><span>Nossa Missão</span>
+                    Criar produtos de qualidade, quantidade e diversidade que permitam aos nossos Clientes poupar tempo,
+                    excedendo as suas expectativas. Dedicamos todo o empenho na preparação de produtos distintos e de eleição.
+                </p>
+            </div>
+            <a class="btn" id="toggle-more">Mais</a>
+        </div>
+        <script src="mais.js"></script>
+    </div>
+</section>
+
+
+
+<!--Sobre Nós end-->
+
+    <!-- Como Trabalhamos -->
+    <section class="container-como">
+        <div class="heading-como">
+            <h1> Como Trabalhamos </h1>
+        </div>
+        <div class="como">
+            <div class="como-box">
+                <div class="como-wrapper">
+                    <input type="checkbox" class="como-trigger" id="como-trigger-1" checked>
+                    <label class="como-title" for="como-trigger-1">Proposta/Encomenda</label>
+                    <div class="como-detail">
+                        <p>
+                            Após solicitação/pedido de encomenda a SWEET&SALTY informará o Cliente do Preço, Prazo de Entrega, Hora e Local, 
+                            seja ele,Delivery ou Take-away da encomenda, assim como as Condições de Pagamento.
+                        </p>
+                    </div>
+                </div>
+                <div class="como-wrapper">
+                    <input type="checkbox" class="como-trigger" id="como-trigger-2" checked>
+                    <label class="como-title" for="como-trigger-2">Confecção</label>
+                    <div class="como-detail">
+                        <p>
+                            Produção própria, recorrendo a produtos frescos de forma à confecção de sabores caseiros e simultâneamente sofisticados.
+                            Garantindo a frescura do produto,
+                            solicita-se o pedido de Encomenda com 48 horas de antecedência.
+                        </p>
+                    </div>
+                </div>
+                <div class="como-wrapper">
+                    <input type="checkbox" class="como-trigger" id="como-trigger-3" checked>
+                    <label class="como-title" for="como-trigger-3">Adjudicação</label>
+                    <div class="como-detail">
+                        Para esclarecimento, contactar a DOCES&SALGADOS.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="como-wrapper">
+                    <input type="checkbox" class="como-trigger" id="como-trigger-4" checked>
+                    <label class="como-title" for="como-trigger-4">Delivery/Take-away</label>
+                    <div class="como-detail">
+                    <p>Em toda a área da cidade de Luanda.
+                        A combinar com o cliente a hora e local seja em Delivery ou Take-away Centro de Produção da SWEET&SALTY .</p>
+                    </div>
+                </div>
+
+               
+            </div>
+            
+        </div>
+        </div>
+</section>
+
+
+
+    <!-- Como Trabalhamos end-->
+
+  
+
+    <!-- Galeria-->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">Nossos <span> Trabalhos</span></h1>
+
+        <div class="gallery-container">
+
+            <a href="casamento1.jpg" class="box">
+                <img src="casamento1.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="casamento7.jpg" class="box">
+                <img src="casamento7.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="an30.jpg" class="box">
+                <img src="an30.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="an37.jpg" class="box">
+                <img src="an37.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="banner2.jpeg" class="box">
+                <img src="banner2.jpeg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="ch18.jpeg" class="box">
+                <img src="ch18.jpeg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="principal1.jpg" class="box">
+                <img src="principal1.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="casamento3.jpg" class="box">
+                <img src="casamento3.jpg" alt="">
+                <div class="icons"><i class="fas fa-plus"></i></div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Galeria fim -->
+
+    
+    <!-- Equipa-->
+
+    <section class="team" id="team">
+
+        <h1 class="heading">Nossa  <span>Equipa</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="che.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>erica Jacinto</h3>
+                    <p>CEO</p>
+                    <div class="share">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="che1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Maria Neto</h3>
+                    <p>gerente</p>
+                    <div class="share">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="OIP.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Keana</h3>
+                    <p>gerente</p>
+                    <div class="share">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Equipa and -->
+
+
+    <!--Comentários Clientes -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> Avaliação do <span>Cliente</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="img.jpg" class="user" alt="">
+                <h3>Eva Neto</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Adorei o bolo de nozes da Sweet Delights! Foi perfeito para celebrar o aniversário da minha mãe. A massa estava fresca e as nozes crocantes deram um toque especial.</p>
+            </div>
+
+            <div class="box">
+                <img src="n.jpg" class="user" alt="">
+                <h3>Nawandi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Os bolos de chocolate que escolhi foram simplesmente divinos - úmidos, ricos em sabor e decorados de maneira impecável. Cada mordida era uma explosão de felicidade e sabores que me deixaram desejando mais. Com certeza voltarei à Sweet Delights para todas as minhas celebrações especiais!</p>
+            </div>
+
+            <div class="box">
+                <img src="img1.png" class="user" alt="">
+                <h3>Joana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Sou cliente fiel da Sweet Delights por causa dos seus bolos incríveis! Sempre frescos, sempre deliciosos. Recomendo a todos!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Comentários Clientes and -->
+
+     <!--FAQ-->
+     <section class="header-faq" id="faq">  
+        <h1 class="header-title-faq"> FAQ </h1>
+            <p class="header-desc-faq"><strong> Perguntas frequentes que possam existir. Queremos ser o mais transparentes possiveis. </strong></p>
+            <div class="faq">
+                <div class="faq-box">
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-1">
+                        <label class="faq-title" for="faq-trigger-1">Quem Pode Comprar?</label>
+                        <div class="faq-detail">
+                            <p>
+                                Os nossos serviços estão disponiveis para particulares e empresas. Para saber mais informações deverá contactar a 
+                                Doces & Salgados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-2">
+                        <label class="faq-title" for="faq-trigger-2">Como Posso Personalizar a minha encomenda?</label>
+                        <div class="faq-detail">
+                            <p>
+                                A encomenda pode ser personalizada desde o Produto pretendido, escolhendo o tipo de massa, recheio, cobertura e decoração ao desejo
+                                do Cliente, de acordo com os artigos disponíveis para o efeito, via whatsapp ou email.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-3">
+                        <label class="faq-title" for="faq-trigger-3">Como se efectua o Pagamento após o pedido de Encomenda?</label>
+                        <div class="faq-detail">
+                            Após o pedido de encomenda, segue-se o envio da nota de encomenda via whatsapp, ou na impossibilidade deste, via email do valor a pagamento, onde se informa as 
+                            várias formas de pagamento do valor total de encomenda, nomeadamente por transferência bancária / numerário no acto de entrega.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-4">
+                        <label class="faq-title" for="faq-trigger-4">Como Proceder Utilizando a Opção de Pagamento via transferência Bancária?</label>
+                        <div class="faq-detail">
+                        <p>O Cliente deverá enviar o comprovativo de pagamento digitalizado para o whatsapp: 945083501,
+                            indicando no assunto o número da sua encomenda</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-5">
+                        <label class="faq-title" for="faq-trigger-5">Qual é o Tempo Mínimo para Fazer uma Encomenda?</label>
+                        <div class="faq-detail">
+                            A encomenda deverá ser feita com 48 horas de antecedência. No caso de ser efectuada 
+                            com 24 horas de antecedência, acrescerá 10% no valor total.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-6">
+                        <label class="faq-title" for="faq-trigger-6">Qual é o Horário Disponível para fazer o Delivery?</label>
+                        <div class="faq-detail">
+                            O horário para entrega da encomenda, será a combinar com o Cliente, assim como o Local de Entrega, ou se preferir,
+                            a levantar na morada de Produção.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-7">
+                        <label class="faq-title" for="faq-trigger-7">Existe Alguma Custo de Transporte?</label>
+                        <div class="faq-detail">
+                            Mediante a localização para o Delivery poderá ter um custo associado
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-wrapper">
+                        <input type="checkbox" class="faq-trigger" id="faq-trigger-8">
+                        <label class="faq-title" for="faq-trigger-8">Posso Usufruir de Algum Desconto?</label>
+                        <div class="faq-detail">
+                            O Cliente tem sempre um desconto incial quando adere aos nossos serviços, assim como promoções pontuais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <section class="enviar-email">
+                    <a href="#order"> 
+                        <div class="ll">
+                            <p class="questao"> <span> Mais Alguma Pergunta?</span></p>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="alguma"> <span> Se tiver mais perguntas, envia-nos uma mensagem e nós responderemos o mais breve possível.
+                                Obrigado pela sua atenção
+                            </span></p>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </section> 
+    <!-- FAQ -->
+
+    <!-- Encomendar -->
+
+    <section class="order" id="order">
+
+        <h1 class="heading"><span>Encomende</span> Agora </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15769.585261568749!2d13.25999715!3d-8.8426437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3e7a1c57049%3A0x468ab0e94982af0a!2sBAIRRO%20POPULAR%2C%20Luanda!5e0!3m2!1spt-PT!2sao!4v1720038989549!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="" id="contactForm">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Nome" id="nome">
+                    <input type="text" placeholder="Apelido" id="apelido">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="Email" id="email">
+                    <input type="number" placeholder="Telefone" id="telefone">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Nome do produto" id="produto">
+                    <input type="number" placeholder="Quantidade" id="quantidade">
+                </div>
+
+                <textarea placeholder="Seu Endereço" name="" id="endereco" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+
+        </div>
+        <script src="formulario.js"></script>
+    </section>
+
+    <!-- Encomendar and -->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Endereço</h3>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Luanda, Bairro Popular.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>E-mail</h3>
+                <a href="#" class="link">brancaneto97@gmail.com</a>
+                <a href="#" class="link">brancaneto97@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Telefones</h3>
+                <p>+244 945083501</p>
+                <p>+244 936198425</p>
+            </div>
+
+            <div class="box">
+                <h3> Horário</h3>
+                <p>Segunda - Sexta: 9:00 - 23:00 <br> Sabádo: 8:00 - 24:00 </p>
+            </div>
+            
+
+        </div>
+
+        <div class="credit"> &#169 2024 <span>Sweet Delights</span> Todos os Direitos Reservados! </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

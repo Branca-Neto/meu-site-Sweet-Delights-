@@ -1,0 +1,156 @@
+@import url('http://fonts.googleapis.com/css?familyOpen+Sans:400,700');
+
+
+#faq{
+    background: url(casamento6.jpg) no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: 0;
+    position: relative;
+  }
+
+  #faq::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; 
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+.header-faq{
+    padding: 4rem 0; /* Ajusta o espaçamento interno da seção */
+   
+   background-color: black;
+}
+.header-faq .header-title-faq {
+    color: #c98d83;
+    font-size: 50px;
+    text-align: center !important; /* Centraliza o texto */
+}
+
+.header-faq .header-desc-faq{
+    font-size: 20px;
+    letter-spacing: 1;
+    text-align: center;
+    color: white;
+} 
+
+.enviar-email a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha os itens no final do contêiner */
+    padding: 70px 90px;
+    background: #c98d83;
+    width: 300px;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: auto;
+    margin-right: 20px; /* Afasta a seção do canto direito */
+    transition: 0.4s ease;
+}
+
+.enviar-email:hover a {
+    background-color:#783b31; /* Altera a cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto ao passar o mouse */
+    transform: translateY(-10px);
+}
+.alguma span {
+    font-size: 15px; /* Ajusta o tamanho do texto "Mais Alguma Pergunta?" */
+    line-height: 1.6;
+}
+
+.fa-solid.fa-envelope {
+    font-size: 70px; /* Ajusta o tamanho do ícone */
+    margin: 11px; /* Adiciona espaço entre o ícone e o texto */
+}
+
+.enviar-email .ll .questao span{
+    display: block;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+
+}
+.faq{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 3%;
+}
+
+
+.faq-header{
+    padding: 5% 0 0 0 ;
+    font-size: 40px;
+    letter-spacing: 2;
+}
+
+
+.faq-box{
+    flex: 1;
+    min-width: 320px;
+    padding: 2% 0 4% 4%;
+    border-left: 2px solid #783b31;
+}
+
+.faq-wrapper{
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 1px solid #783b31;
+}
+.faq-title{
+    display: block;
+    position: relative;
+    width: 100%;
+    letter-spacing: 1.2;
+    font-size: 25px;
+    font-weight: 600;
+    color: #c98d83;
+}
+
+.faq-title:after{
+    width: 10px;
+    height: 10px;
+    content: "";
+    float: right;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    transform: 0.4s ease-in-out;
+}
+
+.faq-detail{
+    line-height: 1.5;
+    letter-spacing: 1;
+    max-height: 0;
+    overflow: hidden;
+    transform: 0.3s ease-in-out;
+    font-size: 18px;
+    color: white;
+}
+
+.faq-trigger{
+    display: none;
+
+}
+
+.faq-trigger:checked + .faq-title + .faq-detail{
+    max-height: 300px;
+}
+
+
+.faq-trigger:checked + .faq-title::after{
+    transform: rotate(-45deg);
+    transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width:680px) {
+    .faq-title{
+        font-size: 20px;
+    }
+    
+}

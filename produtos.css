@@ -1,0 +1,131 @@
+
+/* Produtos*/
+
+.aniversario{
+  background: var(--bg);
+  
+}
+
+.aniversario .box-container{
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+  gap: 2rem;
+}
+
+.aniversario .box-container .box{
+  background: var(--white);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.aniversario .box-container .box .image{
+  height: 35rem;
+  width: 100%;
+  padding: 1.1rem;
+}
+
+.aniversario .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  object-fit: cover;
+  transition: filter, transform 0.2s;
+}
+.aniversario .box-container .box .image img:hover{
+  filter: blur(0px);
+  transform: scale(1.1);
+}
+.aniversario .box-container .box .content{
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.aniversario .box-container .box .content h3{
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.aniversario .box-container .box .content .stars{
+  padding: 1rem 0;
+}
+
+.aniversario .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--secondary);
+}
+
+.aniversario .box-container .box .content .price{
+    
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--secondary);
+  margin-right: 1rem;
+}
+
+h1{
+    font-size: 25px;
+    color: wheat;
+}
+
+.header1{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(casamento4.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 3%;
+    border-radius: 30px;
+    max-width: 1500px;
+    color: var(--whitecolor);
+   
+}
+
+.header2{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(bolo19.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 3%;
+    border-radius: 30px;
+    max-width: 1500px;
+    color: var(--whitecolor);
+}
+.header3{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(doce10.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 3%;
+    border-radius: 30px;
+    max-width: 1500px;
+    color: var(--whitecolor);
+}
+
+.header4{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(caseiro1.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 3%;
+    border-radius: 30px;
+    max-width: 1500px;
+    color: var(--whitecolor);
+}
+
+
+/* Produtos Fim

@@ -1,0 +1,130 @@
+* {
+    
+    font-family: "montserrat", sans-serif;
+    
+}
+
+
+body {
+    background: white;
+
+}
+.contacto h1{
+    font-size: 60px;
+    color: #c98d83;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.contact-section {
+    float: right;
+    width: 50%; /* Ajuste conforme necessário */
+    padding: 10px 20px; /* Adicione um espaçamento para separar do conteúdo */
+}
+
+.border {
+    width: 100px;
+    height: 10px;
+    background: #f2f1ec;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #f2f1ec;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #c98d83;
+}
+
+textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+    color: black;
+}
+
+.contact-form-btn {
+    border: 0;
+    background: black;
+    color: #fff;
+    padding: 12px 50px;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+    background: #c98d83;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    background: black;
+    flex-direction: column;
+}
+.main h1{
+    font-size: 60px;
+    color: #c98d83;
+}
+
+.text {
+    font-size: 60px;
+    color: #c98d83;
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: black;
+    margin-bottom: 100px;
+    font-size: 35px;
+}
+
+.btn {
+    padding: 15px 55px;
+  
+    text-decoration: none;
+   
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-radius: 16px;
+    background: #c98d83;
+}
+
+
+.Imagem-cont {
+    float: left;
+    width: 50%; /* Ajuste conforme necessário */
+    margin-right: auto; /* Centraliza horizontalmente */
+    margin-top: -10px; /* Ajuste este valor para subir a imagem */
+}
+
+.Imagem-cont img {
+    width: 100%;
+    max-height: 400px; /* Defina a altura máxima desejada */
+    height: auto;
+}
